@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>My Portfolio</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,6 +16,7 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <script src="https://kit.fontawesome.com/b2c9069e90.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -25,7 +26,150 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  
+  <header>
+    <div class = "content-wrapper">
+      <nav>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="home-header">
+      <h1>Hello, I am Krystine Enriquez!</h1>
+      <h2>I am a Front End Developer from Deep South Texas.</h2>
+    </div>
+  </header>
+
+  <main>
+    <article class = "portfolio">
+      <section id = "work">
+        <div class = "content-wrapper">
+          <h3 class = "portfolio-header">Projects</h3>
+          <div class = "portfolio-wrapper">
+            <div class = "home-portfolio-piece">
+              <figure>
+                <a href = "https://geo590.csb.app/" target = "_blank">
+                  <img src = "img/sticky-notes.png" alt = "Sticky Notes App">
+                </a>
+              </figure>
+              <h4>Super Sticky Notes</h4>
+              <p class = "project-description">"Keep track of all your notes and lists on this app made with React.  Add, edit, delete, and search through notes easily."</p>
+              <p><span>Skills: </span>"ES6, JSX, React"</p>
+              <p><span>Tools: </span>"CodeSandbox"</p>
+              <a class = "project-link" href = "https://geo590.csb.app/" target = "_blank">Live Page</a>
+            </div>
+            <div class = "home-portfolio-piece">
+              <figure>
+                <a href = "https://krystinee.github.io/github-repo-gallery-v2/" target="_blank">
+                  <img src = "img/gh-gallery.png" alt = "GitHub Repo Gallery">
+                </a>
+              </figure>
+              <h4>GitHub Repo Gallery</h4>
+              <p class = "project-description">"Made using JavaScript and GitHub's APIs, visitors are allowed to view my GitHub repositories in a gallery style page."</p>
+              <p><span>Skills: </span>"JavaScript"</p>
+              <p><span>Tools: </span>"GitHub, APIs"</p>
+              <a class = "project-link" href = "https://krystinee.github.io/github-repo-gallery-v2/" target = "_blank">Live Page</a>
+            </div>
+            <div class = "home-portfolio-piece">
+              <figure>
+                <a href = "https://krystinee.github.io/guess-the-word/" target = "_blank">
+                  <img src = "img/gtw-pic.png" alt = "Guess the Word Game">
+                </a>
+              </figure>
+              <h4>Guess the Word Game</h4>
+              <p class = "project-description">"This is a fun and interactive game made with JavaScript.  User’s guess the word one letter at a time, with a limited amount of guesses.  Win or lose, you can play again!"</p>
+              <p><span>Skills: </span>"JavaScript"</p>
+              <p><span>Tools: </span>"GitHub, JSON"</p>
+              <a class = "project-link" href="https://krystinee.github.io/guess-the-word/" target="_blank">Live Page</a>
+            </div>
+            <div class = "home-portfolio-piece">
+              <figure>
+                <a href = "https://krystinee.github.io/unplugged-retreat/" target="_blank">
+                  <img src = "img/unplugged-pic.png" alt = "Unplugged Retreat">
+                </a>
+              </figure>
+              <h4>Unplugged Retreat</h4>
+              <p class = "project-description">"A 3-page responsive website for a tech free retreat.  This website was created using HTML, CSS, and Flexbox."</p>
+              <p><span>Skills: </span>"CSS3, Flexbox, HTML5, Media Queries, Responsive Typographies"</p>
+              <p><span>Tools: </span>"GitHub, Photoshop, Text Editor"</p>
+              <a class = "project-link" href = "https://krystinee.github.io/unplugged-retreat/" target = "_blank">Live Page</a>
+            </div>            
+          </div>
+        </div>
+      </section>
+
+      <section id = "skills">
+        <div class = "content-wrapper">
+          <h3 class = skills-header>Skills</h3>
+          <h4>Developer Skills</h4>
+          <div class = "language-wrapper">
+            <p class = "skill">HTML and CSS</p>
+            <p class = "skill">Responsive Web Development</p>
+            <p class = "skill">JavaScript</p>
+            <p class = "skill">React</p>
+            <p class = "skill">GitHub</p>
+          </div>
+          <h4>Tech Skills</h4>
+          <div class = "tool-wrapper">
+            <p class = "tool">Chrome DevTools</p>
+            <p class = "tool">GitHub Pages</p>
+            <p class = "tool">CodeSandbox</p>
+            <p class = "tool">Text Editor</p>
+            <p class = "tool">Photoshop</p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <section id = "about">
+      <div class = "content-wrapper">
+        <div class = "about-wrapper">
+          <figure>
+            <img src = "img/about-photo.png" alt id = "about profile image">
+          </figure>
+          <div class = "about-info">
+            <h3>Hi, I'm Krystine Enriquez</h3>
+            <h4>I'm a Front End Developer with a love for creating clean, creative websites.</h4>
+            <p class = "about-text">I have always been interested in how things work.  Ever since I was a kid, my family would hand me the instruction manual to figure out how to connect things or to put objects together.  I was the only one who had the patience to take the time to make sense of each step and work it out.  I believe that is where my intrigue in web development can be linked to.  When I'm not in front of a computer, I absolutely love to be out enjoying nature! Going for a walk or just being outdoors on a beautiful day fills my soul with happiness. </p>            
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id = "contact">
+    <div class = "content-wrapper">
+      <h3>Connect With Me</h3>
+      <div class = "contact-wrapper">
+        <div class = "contact-info">
+          <h5 class = "contact-title">Contact Me</h5>
+          <p>krysti.1527@gmail.com</p>
+        </div>
+        <div class = "contact-info follow-section">
+          <h5 class = "contact-title">Follow Me</h5>
+          <ul class = "social-icons">
+            <li>
+              <a href="https://www.linkedin.com/in/krystine-enriquez-587733247/" target = "_blank">
+                <i class = "fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/krystinee" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p>Copyright 2022 | Krystine Enriquez</p>
+    </div>
+  </footer>
+  
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
