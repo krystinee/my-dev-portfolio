@@ -158,7 +158,7 @@ nav #contact-link {
   border-radius: 30px;
 }
 
-header h1 {
+h1 {
   width: 100%;
   margin: 0;
   color: black;
@@ -194,6 +194,11 @@ main, article {
   flex-flow: row wrap;
 }
 
+#work p {
+  width: 100%;
+  text-align: left;
+}
+
 h3 {
   width: 100%;
   margin-bottom: 20px;
@@ -221,6 +226,7 @@ h3 {
 
 .home-portfolio-piece figure {
   width: 100%;
+  filter: drop-shadow(1px 2px 6px lightgrey);
 }
 
 figure {
@@ -328,7 +334,7 @@ figure {
 }
 
 #about h3 {
-  margin: 40px 0 40px 0;
+  margin: 10px 0 40px 0;
 }
 
 #about h4 {
@@ -396,6 +402,7 @@ h5 {
   font-size: 1.5rem;
   width: 100%;
   line-height: 1.5;
+  font-weight: 700;
 }
 
 footer .social-icons {
@@ -424,6 +431,7 @@ footer .social-icons li {
 p, li {
   font-size: 1rem;
   line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
 }
 
 footer .social-icons li i {
@@ -518,7 +526,366 @@ footer .social-icons li i {
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width: 35em) {
+/*TABLET*/
+
+@media only screen and (min-width: 768px) {
+  header {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+/*HEADER*/
+  header .content-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  .content-wrapper {
+    max-width: 640px;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-transform: uppercase;
+  }
+
+  nav {
+    margin: 0 0 80px 0;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  header nav ul li {
+    font-size: 1rem;
+  }
+
+  .home-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .home-header h2 {
+    max-width: 80%;
+  }
+
+  h2 {
+    margin-top: 80px;
+    font-size: 1.5rem;
+  }
+
+/*PROJECTS*/
+#work {
+  padding-top: 120px;
+}
+
+.portfolio-header {
+  margin: 0 0 60px 0;
+  font-size: 2rem;
+}
+
+.portfolio-wrapper {
+  justify-content: space-around;
+}
+
+.home-portfolio-piece {
+  width: 45%;
+  align-items: center;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+.project-description {
+  width: 95%;
+  margin: 0 0 30px 0;
+}
+
+.project-link {
+  margin: 40px 0 60px 0;
+}
+
+/*SKILLS*/
+#skills {
+padding-top: 80px;
+padding-bottom: 120px;
+}
+
+.skills-header {
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+#skills h4 {
+  margin: 40px 0 30px 0;
+  font-weight: 400;
+}
+
+.language-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-flow: row wrap;
+  text-transform: uppercase;
+}
+
+.language-wrapper p {
+  padding: 15px 0;
+}
+
+.skill, .tool {
+  width: auto;
+  width: 45%;
+}
+
+.tool-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-flow: row wrap;
+  text-transform: uppercase;
+}
+
+.tool-wrapper p {
+  padding: 15px 0;
+}
+
+#about {
+  padding: 120px 0;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#about figure {
+  width: 60%;
+}
+
+.about-info h3 {
+  font-size: 3.5rem;
+  margin: 80px 0;
+}
+
+.about-info h4 {
+  text-align: left;
+  margin: 0 0 60px 0;
+}
+
+/*FOOTER*/
+footer {
+  padding-bottom: 80px; 
+  padding: 120px 0;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .contact-info {
+  width: 45%;
+}
+
+.contact-info {
+  margin: 80px 0;
+}
+
+.contact-title {
+  margin: 0 0 30px 0;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+footer .social-icons {
+  width: 8em;
+  justify-content: space-between;
+}
+
+}
+
+/****DESKTOP****/
+
+@media only screen and (min-width: 1200px) {
+  header {
+    padding-top: 80px;
+    padding-bottom: 140px;
+  }
+/*HEADER*/
+header .content-wrapper {
+  justify-content: flex-end;
+}
+
+.content-wrapper {
+  max-width: 1450px;
+}
+
+header nav {
+  justify-content: flex-end;
+  width: 45%;
+}
+
+nav {
+  margin-bottom: 80px;
+}
+
+nav ul li a {
+  padding: 10px 10px;
+}
+
+.home-header {
+  max-width: 95%;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.home-header h2 {
+  max-width: 70%;
+}
+
+h2 {
+  margin: 40px 0 0 0;
+  font-size: 2rem;
+}
+
+/*PROJECTS*/
+#work {
+  padding-top: 140px;
+}
+
+.portfolio-header {
+  margin: 0 0 60px 0;
+  font-size: 2.5rem;
+}
+
+.home-portfolio-piece {
+  width: 30%;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+.project-description {
+  margin: 0 0 30px 0;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.project-link {
+  margin: 40px 0 80px 0;
+  font-size: 1rem;
+}
+
+/*SKILLS*/
+#skills {
+padding-top: 120px;
+padding-bottom: 140px;
+}
+
+#skills .content-wrapper {
+  max-width: 900px;
+}
+
+.skills-header {
+margin-bottom: 40px;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+.language-wrapper p, .tool-wrapper p {
+  font-size: 1rem;
+}
+
+.skill .tool {
+  width: 30%;
+}
+
+/*ABOUT*/
+#about {
+  padding-top: 140px;
+  padding-bottom: 160px;
+}
+
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about figure {
+  width: 35%;
+  margin-top: 0;
+}
+
+.about-info {
+  width: 58%;
+}
+
+.about-info h3 {
+  margin: 0;
+  font-size: 3.75rem;
+  text-align: left;
+}
+
+.about-info h4 {
+  margin: 40px 0;
+  font-size: 2rem;
+}
+
+/*FOOTER*/
+footer {
+  padding: 160px 0 140px 0;
+}
+
+footer .content-wrapper {
+  max-width: 70%;
+}
+
+.contact-info {
+  margin: 60px 0 40px 0;
+}
+
+.contact-title {
+  margin: 0 0 30px 0;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+footer .social-icons {
+  width: 8em;
+  justify-content: space-between;
+}
+
+}
+
+
+ @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
 
@@ -535,7 +902,7 @@ footer .social-icons li i {
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-@media print {
+   @media print {
   *,
   *::before,
   *::after {
