@@ -350,6 +350,12 @@ figure {
   margin: 0 0 30px 0;
 }
 
+#about figure {
+  border: 10px solid #e8f0e4;
+  background-color: #e8f0e4;
+  margin: auto;
+}
+
 /*FOOTER*/
  
 footer {
